@@ -8,6 +8,12 @@ const tweetBank = require('../tweetBank');
 //     res.sendFile('/Users/annamedyukh/twitter-js/public/stylesheets/style.css')
 // })
 
+router.get('/:name', function(req, res){
+    let name = req.params.name;
+    let tweets = tweetBank.find( {name: name} );
+    res.render('index', { tweets: tweets });
+})
+
 router.get('/', function (req, res) {
   let tweets = tweetBank.list();
   res.render( 'index', { tweets: tweets } );
