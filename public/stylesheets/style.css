@@ -57,3 +57,19 @@ code {
 .content .by {
   font-weight: bold;
 }
+
+li {
+  list-style-type: none;
+  display: flex;
+  color: #6D6DB4;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+
+/* .tweets {
+  float: center;
+}
+
+#tweetphoto {
+  float: left;
+} */
